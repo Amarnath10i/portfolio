@@ -128,6 +128,7 @@ nav.wrap {
   font-weight: 700;
   color: var(--text-primary);
 }
+.brand-dot {
   width: 10px; height: 10px; border-radius: 50%;
   background: var(--grad-primary);
   box-shadow: 0 0 12px rgba(10, 132, 255, 0.4);
