@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Hero } from '@/components/sections/Hero';
+import { About } from '@/components/sections/About';
 import { Research } from '@/components/sections/Research';
 import { Projects } from '@/components/sections/Projects';
 import { Experience } from '@/components/sections/Experience';
@@ -14,24 +15,7 @@ export default function Home() {
       <Research />
       <Projects />
       
-      {/* About Section */}
-      <section id="about">
-        <div className="wrap">
-          <div className="sec-head reveal">
-            <h2><span className="grad">About Me</span></h2>
-          </div>
-          <div className="focus-grid" style={{ gridTemplateColumns: '1fr', maxWidth: '800px' }}>
-            <div className="focus-card reveal" style={{ padding: '40px' }}>
-              <p style={{ fontSize: '17px', lineHeight: '1.8', color: 'var(--text-primary)', marginBottom: '20px' }}>
-                I am a B.Tech Computer Science student at NIT Andhra Pradesh with a strong foundation in building intelligent systems and scalable web platforms. I enjoy bridging the gap between cutting-edge AI research and practical, user-facing applications.
-              </p>
-              <p style={{ fontSize: '17px', lineHeight: '1.8', color: 'var(--text-secondary)' }}>
-                My work spans analyzing deep neural networks to understand their confidence levels (calibration), designing multi-agent memory structures, and crafting modern web experiences using frameworks like Next.js and React. Whether it's training a model on a large dataset or architecting a real-time IoT dashboard, I love diving deep into complex technical challenges.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <About />
 
       <Experience />
       <Skills />
