@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madaka Amarnath — Memory Architectures & Calibration Research</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Phosphor Icons for Apple-like thin icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <!-- Ambient Glow Background -->
+  <div class="ambient-glow">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <header class="site" id="navbar">
+    <div class="nav-glass">
+      <nav class="wrap">
+        <div class="brand">
+          <div class="brand-dot"></div>
+          AMARNATH
+        </div>
+        
+        <div class="navlinks" id="nav-links">
+          <a href="#work">Work</a>
+          <a href="#research">Research</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero wrap" id="home">
+    <div class="hero-content reveal">
+      <div class="eyebrow">
+        <span>Available for Research Roles</span>
+      </div>
+      
+      <h1>Building <em>memory</em> into machines.</h1>
+      
+      <p class="lede">
+        I'm Amarnath — an independent researcher and builder working on long-term memory architectures for AI agents and calibration in deep neural networks.
+      </p>
+      
+      <div class="hero-cta">
+        <a class="btn solid" href="#work">
+          View Projects <i class="ph ph-arrow-right"></i>
+        </a>
+        <a class="btn ghost" href="https://github.com/Amarnath10i" target="_blank" rel="noopener">
+          <i class="ph ph-github-logo"></i> GitHub
+        </a>
+        <a class="btn ghost" href="https://kaggle.com/amarnath10" target="_blank" rel="noopener">
+          <i class="ph ph-kaggle-logo"></i> Kaggle
+        </a>
+      </div>
+    </div>
+
+    <div class="orbit-wrap reveal reveal-delay-2">
+      <svg viewBox="0 0 600 600" width="360" height="360" role="img" aria-label="Diagram of a nucleus surrounded by three orbital memory layers">
+        <!-- Nucleus -->
+        <circle class="nucleus-bg" cx="300" cy="300" r="32"/>
+        <text class="nucleus-text" x="300" y="306" text-anchor="middle" font-size="16">MA</text>
+
+        <!-- Orbital Rings -->
+        <g class="ring r1">
+          <ellipse cx="300" cy="300" rx="120" ry="60" fill="none" stroke-width="1.5" transform="rotate(18 300 300)"/>
+          <circle cx="420" cy="273" r="6" transform="rotate(18 300 300)"/>
+          <text class="orbit-label" x="440" y="278" transform="rotate(18 300 300)">EPISODIC</text>
+        </g>
+
+        <g class="ring r2">
+          <ellipse cx="300" cy="300" rx="190" ry="95" fill="none" stroke-width="1.5" transform="rotate(-24 300 300)"/>
+          <circle cx="490" cy="300" r="6" transform="rotate(-24 300 300)"/>
+          <text class="orbit-label" x="502" y="305" transform="rotate(-24 300 300)">SEMANTIC</text>
+        </g>
+
+        <g class="ring r3">
+          <ellipse cx="300" cy="300" rx="255" ry="128" fill="none" stroke-width="1.5" transform="rotate(8 300 300)"/>
+          <circle cx="555" cy="317" r="6" transform="rotate(8 300 300)"/>
+          <text class="orbit-label" x="500" y="345" transform="rotate(8 300 300)">PROCEDURAL</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Scrolling Marquee -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <!-- Repeated for infinite scroll -->
+      <span>RESEARCHER <i class="sep"></i> BUILDER <i class="sep"></i> ENGINEER <i class="sep"></i> AI CALIBRATION <i class="sep"></i> MEMORY ARCHITECTURES <i class="sep"></i></span>
+      <span>RESEARCHER <i class="sep"></i> BUILDER <i class="sep"></i> ENGINEER <i class="sep"></i> AI CALIBRATION <i class="sep"></i> MEMORY ARCHITECTURES <i class="sep"></i></span>
+      <span>RESEARCHER <i class="sep"></i> BUILDER <i class="sep"></i> ENGINEER <i class="sep"></i> AI CALIBRATION <i class="sep"></i> MEMORY ARCHITECTURES <i class="sep"></i></span>
+    </div>
+  </div>
+
+  <section id="research">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2><span class="grad">Research</span> Focus</h2>
+        <div class="note">Three threads that keep showing up in my notebooks, tied together by one question: can a system know how much to trust itself?</div>
+      </div>
+      
+      <div class="focus-grid">
+        <div class="focus-card reveal">
+          <span class="bond"></span>
+          <h3>Calibration & uncertainty</h3>
+          <p>Studying why deep networks grow overconfident as they train, and how to correct it — from post-hoc temperature scaling to architectures that separate what a model knows from how sure it is.</p>
+        </div>
+        
+        <div class="focus-card reveal reveal-delay-1">
+          <span class="bond"></span>
+          <h3>Memory architectures</h3>
+          <p>Designing longitudinal memory for AI agents: atoms, bonds, and orbital shells that let a system retrieve the right context without drowning in everything it's ever seen.</p>
+        </div>
+        
+        <div class="focus-card reveal reveal-delay-2">
+          <span class="bond"></span>
+          <h3>Multi-agent systems</h3>
+          <p>Currently defining a new direction on verifier drift — whether a judge model watching a self-improving loop quietly collapses toward rubber-stamping "yes," and how early that's detectable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bordered" id="work">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Selected <span class="grad">Work</span></h2>
+        <div class="note">Research projects and systems, newest first.</div>
+      </div>
+
+      <!-- Molecular Memory Architecture -->
+      <div class="project reveal">
+        <div>
+          <div class="project-head">
+            <h3>Molecular Memory Architecture</h3>
+            <span class="tag research">Memory Systems</span>
+          </div>
+          <p>A hierarchical longitudinal memory system for AI agents — a nucleus plus three orbital layers, with dynamic semantic-graph bonding between memory "atoms."</p>
+          <ul>
+            <li>FAISS HNSW retrieval across episodic, semantic, and procedural memory stores</li>
+            <li>Token-budget aware context injection, so retrieval respects the model's context window rather than overflowing it</li>
+            <li>Forms the memory backbone of an AI tutoring platform currently in development</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Amarnath10i/Atom" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="metrics">
+          <div class="metric"><div class="val">3</div><div class="lbl">Memory Layers</div></div>
+          <div class="metric"><div class="val">HNSW</div><div class="lbl">Retrieval Index</div></div>
+        </div>
+      </div>
+
+      <!-- SPECTRA+ -->
+      <div class="project reveal">
+        <div>
+          <div class="project-head">
+            <h3>SPECTRA+</h3>
+            <span class="tag research">Calibration</span>
+          </div>
+          <p>Geometric Feature Orthogonal Decomposition for CNN calibration — a training framework that splits feature space into a discriminative subspace and an uncertainty subspace.</p>
+          <ul>
+            <li>Gram-Schmidt initialization plus a Frobenius orthogonality penalty to keep the two subspaces genuinely independent</li>
+            <li>Combined with JSR, AHTS, CCKD, and TTSE for calibration and accuracy gains together, not traded off</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Amarnath10i/spectra-plus-research" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="metrics">
+          <div class="metric"><div class="val">85.54%</div><div class="lbl">Accuracy (CIFAR-100)</div></div>
+          <div class="metric"><div class="val">0.0061</div><div class="lbl">Expected Calibration Error</div></div>
+        </div>
+      </div>
+
+      <!-- Layer-wise Calibration -->
+      <div class="project reveal">
+        <div>
+          <div class="project-head">
+            <h3>Layer-wise Calibration in CNNs</h3>
+            <span class="tag research">Deep Learning</span>
+          </div>
+          <p>Linear-probed all 54 residual blocks of a ResNet-110 on CIFAR-100 to trace how miscalibration develops layer by layer, finding a consistent three-phase lifecycle.</p>
+          <ul>
+            <li>Early layers: ECE 0.01–0.05 — well calibrated by default</li>
+            <li>Middle layers: ECE peaks near 0.38, MCE near 0.85 — confidence runs far ahead of accuracy</li>
+            <li>Late layers: a "confidence correction phase" pulls ECE back down to ~0.056</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Amarnath10i/Calibration-in-CNN" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="metrics">
+          <div class="metric"><div class="val">83%</div><div class="lbl">ECE Reduction</div></div>
+          <div class="metric"><div class="val">54</div><div class="lbl">Residual Blocks Probed</div></div>
+        </div>
+      </div>
+
+      <div class="small-grid">
+        <!-- Repo Runner -->
+        <div class="project small reveal">
+          <div class="project-head">
+            <h3>Repo Runner</h3>
+            <span class="tag">Web Platform</span>
+          </div>
+          <p>Paste a GitHub URL → get a live demo. Auto-detects the stack and runs it: Node, Next.js, Python, static sites, monorepos — in-browser (WebContainers) or local backend.</p>
+          <div class="project-links">
+            <a href="https://github.com/Amarnath10i/repo-runner" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
+            <a href="https://github-runner-kappa.vercel.app" target="_blank" rel="noopener"><i class="ph ph-arrow-up-right"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <!-- CinemaTime -->
+        <div class="project small reveal reveal-delay-1">
+          <div class="project-head">
+            <h3>CinemaTime</h3>
+            <span class="tag">NLP Recommender</span>
+          </div>
+          <p>Movie recommendation system using Sentence-BERT (SBERT) embeddings for semantic search and content-based recommendations over TMDB metadata.</p>
+          <div class="project-links">
+            <a href="https://github.com/Amarnath10i/CinemaTime" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
+            <a href="https://cinema-time-black.vercel.app" target="_blank" rel="noopener"><i class="ph ph-arrow-up-right"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Smart Environment System -->
+        <div class="project small reveal">
+          <div class="project-head">
+            <h3>Smart Environment System</h3>
+            <span class="tag">IoT Platform</span>
+          </div>
+          <p>An intelligent IoT-based environmental monitoring and management platform built with Next.js and TypeScript.</p>
+          <div class="project-links">
+            <a href="https://github.com/Amarnath10i/smart_environment_system" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- FIDES -->
+        <div class="project small reveal reveal-delay-1">
+          <div class="project-head">
+            <h3>FIDES</h3>
+            <span class="tag">Hackathon</span>
+          </div>
+          <p>A trade-compliance and trade-based money laundering (TBML) detection system using LLMs, entity extraction, sanctions screening, and AIS vessel tracking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bordered" id="experience">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Experience & <span class="grad">Education</span></h2>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        
+        <div class="tl-item reveal">
+          <div class="tl-date">Apr 2026</div>
+          <div class="tl-body">
+            <h3>Hackathon Finalist</h3>
+            <div class="org">BITS DP World Hackathon · BITS Pilani</div>
+            <p>Built FIDES end-to-end and presented it to judges as a working trade-compliance and TBML detection system.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-date">2023 – 2027</div>
+          <div class="tl-body">
+            <h3>B.Tech, Computer Science & Engineering</h3>
+            <div class="org">National Institute of Technology Andhra Pradesh</div>
+            <p>CGPA 7.08/10. Coursework: Data Structures & Algorithms, Operating Systems, DBMS, OOP, Machine Learning, Deep Learning.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-date">Intermediate</div>
+          <div class="tl-body">
+            <h3>Sri Chaitanya Co-Ed Junior College</h3>
+            <div class="org">939 / 1000</div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-date">10th Grade</div>
+          <div class="tl-body">
+            <h3>Dr. K.K.R's Gowtham Concept School</h3>
+            <div class="org">CGPA 10/10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bordered" id="skills">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Core <span class="grad">Skills</span></h2>
+      </div>
+      
+      <div class="skills-container">
+        <div class="skills-col reveal">
+          <div class="skill-group">
+            <h4>Languages</h4>
+            <div class="chips">
+              <span class="chip">Python</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">C++</span><span class="chip">C</span><span class="chip">Java</span>
+            </div>
+          </div>
+          
+          <div class="skill-group" style="margin-top: 32px;">
+            <h4>Frameworks & Tools</h4>
+            <div class="chips">
+              <span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Next.js</span><span class="chip">React</span><span class="chip">Flutter</span><span class="chip">Flask</span><span class="chip">Streamlit</span><span class="chip">Docker</span><span class="chip">Git</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-col reveal reveal-delay-1">
+          <div class="skill-group">
+            <h4>Libraries</h4>
+            <div class="chips">
+              <span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Scikit-learn</span><span class="chip">Sentence-Transformers</span><span class="chip">FAISS</span><span class="chip">OpenCV</span>
+            </div>
+          </div>
+          
+          <div class="skill-group" style="margin-top: 32px;">
+            <h4>Databases & Services</h4>
+            <div class="chips">
+              <span class="chip">PostgreSQL</span><span class="chip">SQLite</span><span class="chip">ChromaDB</span><span class="chip">Firebase</span><span class="chip">LLM APIs (Gemini)</span><span class="chip">Hugging Face</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bordered">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2><span class="grad">Achievements</span></h2>
+      </div>
+      <div class="ach-grid">
+        <div class="ach reveal">
+          <div class="val">Finalist</div>
+          <div class="lbl">BITS DP World Hackathon<br>Logistics & Trade-Tech</div>
+        </div>
+        <div class="ach reveal reveal-delay-1">
+          <div class="val">Top 1.9%</div>
+          <div class="lbl">JEE Mains<br>21,391 of 1,100,000 candidates</div>
+        </div>
+        <div class="ach reveal reveal-delay-2">
+          <div class="val">Top 1%</div>
+          <div class="lbl">TS EAMCET<br>2,000 of 195,275 candidates</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="foot-grid reveal">
+        <div>
+          <h2>Let's talk <span>memory, calibration,</span> or what you're building.</h2>
+          <p>Open to research collaborations, hackathon teams, and roles in applied ML.</p>
+        </div>
+        
+        <div class="foot-links">
+          <a href="#" id="copy-email">
+            <i class="ph ph-envelope-simple"></i> amarnath10chinu@gmail.com <i class="ph ph-copy copy-icon"></i>
+          </a>
+          <a href="https://github.com/Amarnath10i" target="_blank" rel="noopener">
+            <i class="ph ph-github-logo"></i> github.com/Amarnath10i
+          </a>
+          <a href="https://kaggle.com/amarnath10" target="_blank" rel="noopener">
+            <i class="ph ph-kaggle-logo"></i> kaggle.com/amarnath10
+          </a>
+        </div>
+      </div>
+      
+      <div class="copyright reveal reveal-delay-1">
+        © 2026 Madaka Amarnath. Built with orbits, in a lab notebook.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
