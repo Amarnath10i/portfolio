@@ -48,23 +48,40 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
             onClick={(e) => e.stopPropagation()}
           >
             <div className="modal-header">
-              <div>
-                <h3 style={{ fontSize: '24px', fontWeight: '800' }}>{project.title}</h3>
-                <span className="tag" style={{ marginTop: '8px', display: 'inline-block' }}>{project.category}</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                <button className="back-arrow-btn" onClick={onClose} aria-label="Go back">
+                  <i className="ph ph-arrow-left"></i>
+                </button>
+                <div>
+                  <h2 style={{ margin: 0, fontSize: '24px', letterSpacing: '-0.02em', textTransform: 'uppercase' }}>
+                    {project.title}
+                  </h2>
+                  <span style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>{project.category}</span>
+                </div>
               </div>
-              <button className="close-btn" onClick={onClose}>
-                <i className="ph ph-x"></i>
-              </button>
+
+              <div className="modal-header-actions">
+                <a href={project.github} className="btn ghost header-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="ph ph-github-logo"></i> GitHub
+                </a>
+                {project.demo && (
+                  <a href={project.demo} className="btn solid header-btn" target="_blank" rel="noopener noreferrer">
+                    <i className="ph ph-arrow-up-right"></i> View website
+                  </a>
+                )}
+              </div>
             </div>
 
             <div className="modal-body">
               <div className="modal-image-container">
-                {/* Fallback pattern if no image exists yet */}
-                <div className="placeholder-image">
-                  <i className="ph ph-image" style={{ fontSize: '48px', opacity: 0.2 }}></i>
-                  <span>Preview Image coming soon</span>
-                  <p style={{ fontSize: '12px', marginTop: '8px' }}>Add {project.image} to public folder</p>
-                </div>
+                {project.image ? (
+                  <img src={project.image} alt={project.title} className="modal-img" />
+                ) : (
+                  <div className="placeholder-image">
+                    <i className="ph ph-image" style={{ fontSize: '48px', opacity: 0.2 }}></i>
+                    <span>Preview Image coming soon</span>
+                  </div>
+                )}
               </div>
               
               <div className="modal-info">
@@ -73,7 +90,10 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
                 {project.details && (
                   <ul className="modal-details">
                     {project.details.map((detail, idx) => (
-                      <li key={idx}><i className="ph-fill ph-check-circle" style={{ color: 'var(--apple-blue)', marginRight: '8px' }}></i> {detail}</li>
+                      <li key={idx}>
+                        <i className="ph-fill ph-sparkle" style={{ color: 'var(--apple-green)', marginRight: '12px', fontSize: '14px', marginTop: '4px' }}></i> 
+                        {detail}
+                      </li>
                     ))}
                   </ul>
                 )}
@@ -83,18 +103,31 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
                     <span key={idx} className="chip">{t}</span>
                   ))}
                 </div>
+              </div>
+            </div>
 
-                <div className="modal-actions">
-                  <a href={project.github} className="btn ghost" target="_blank" rel="noopener noreferrer">
-                    <i className="ph ph-github-logo"></i> GitHub
-                  </a>
-                  {project.demo && (
-                    <a href={project.demo} className="btn solid" target="_blank" rel="noopener noreferrer">
-                      <i className="ph ph-arrow-up-right"></i> Live Demo
-                    </a>
-                  )}
+            {project.image && (
+              <div className="previews-section">
+                <h3 className="previews-title">Previews</h3>
+                <div className="previews-grid">
+                  {[1, 2, 3, 4, 5].map((num) => {
+                    const baseImageName = project.image.replace('/projects/', '').replace('.png', '');
+                    return (
+                      <img 
+                        key={num}
+                        src={`/projects/${baseImageName}-preview-${num}.png`} 
+                        alt={`${project.title} Preview ${num}`} 
+                        className="preview-thumb"
+                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                      />
+                    );
+                  })}
                 </div>
               </div>
+            )}
+
+            <div className="scroll-indicator">
+              <i className="ph ph-arrow-down"></i>
             </div>
           </motion.div>
         </div>

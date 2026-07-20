@@ -1,7 +1,11 @@
 'use client';
+import { useState } from 'react';
 import { profile } from '@/data/profile';
+import { AboutModal } from '@/components/ui/AboutModal';
 
 export const Hero = () => {
+  const [showAboutModal, setShowAboutModal] = useState(false);
+
   return (
     <section className="hero wrap" id="home">
       <div className="hero-content reveal">
@@ -23,14 +27,13 @@ export const Hero = () => {
           <a className="btn solid" href="#projects">
             View My Work <i className="ph ph-arrow-right"></i>
           </a>
-          <a className="btn ghost" href={profile.socials.github} target="_blank" rel="noopener noreferrer">
-            <i className="ph ph-github-logo"></i> GitHub
-          </a>
-          <a className="btn ghost" href={profile.socials.kaggle} target="_blank" rel="noopener noreferrer">
-            <i className="ph ph-kaggle-logo"></i> Kaggle
-          </a>
+          <button className="btn ghost" onClick={() => setShowAboutModal(true)}>
+            Know About Me <i className="ph ph-user"></i>
+          </button>
         </div>
       </div>
+
+      <AboutModal isOpen={showAboutModal} onClose={() => setShowAboutModal(false)} />
 
       <div className="orbit-wrap reveal reveal-delay-2">
         <svg viewBox="0 0 600 600" width="360" height="360" role="img" aria-label="Diagram representing AI and interconnected systems">
