@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madaka Amarnath — Memory Architectures & Calibration Research</title>
+  <title>Madaka Amarnath — Researcher & Software Engineer</title>
   <link rel="stylesheet" href="style.css">
   
   <!-- Phosphor Icons for Apple-like thin icons -->
@@ -27,10 +27,12 @@
         </div>
         
         <div class="navlinks" id="nav-links">
-          <a href="#work">Work</a>
+          <a href="#about">About</a>
           <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
+          <a href="#blog">Blog</a>
           <a href="#contact">Contact</a>
         </div>
 
@@ -46,18 +48,19 @@
   <section class="hero wrap" id="home">
     <div class="hero-content reveal">
       <div class="eyebrow">
-        <span>Available for Research Roles</span>
+        <span>Researcher & Developer</span>
       </div>
       
-      <h1>Building <em>memory</em> into machines.</h1>
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1>MADAKA <br><em>AMARNATH</em></h1>
       
       <p class="lede">
-        I'm Amarnath — an independent researcher and builder working on long-term memory architectures for AI agents and calibration in deep neural networks.
+        I'm a researcher and software engineer passionate about machine learning, deep learning, and building robust applications. I explore problems across AI calibration, memory architectures, and scalable full-stack development.
       </p>
       
       <div class="hero-cta">
-        <a class="btn solid" href="#work">
-          View Projects <i class="ph ph-arrow-right"></i>
+        <a class="btn solid" href="#projects">
+          View My Work <i class="ph ph-arrow-right"></i>
         </a>
         <a class="btn ghost" href="https://github.com/Amarnath10i" target="_blank" rel="noopener">
           <i class="ph ph-github-logo"></i> GitHub
@@ -69,28 +72,28 @@
     </div>
 
     <div class="orbit-wrap reveal reveal-delay-2">
-      <svg viewBox="0 0 600 600" width="360" height="360" role="img" aria-label="Diagram of a nucleus surrounded by three orbital memory layers">
+      <svg viewBox="0 0 600 600" width="360" height="360" role="img" aria-label="Diagram representing AI and interconnected systems">
         <!-- Nucleus -->
         <circle class="nucleus-bg" cx="300" cy="300" r="32"/>
-        <text class="nucleus-text" x="300" y="306" text-anchor="middle" font-size="16">MA</text>
+        <text class="nucleus-text" x="300" y="306" text-anchor="middle" font-size="16">AI</text>
 
         <!-- Orbital Rings -->
         <g class="ring r1">
           <ellipse cx="300" cy="300" rx="120" ry="60" fill="none" stroke-width="1.5" transform="rotate(18 300 300)"/>
           <circle cx="420" cy="273" r="6" transform="rotate(18 300 300)"/>
-          <text class="orbit-label" x="440" y="278" transform="rotate(18 300 300)">EPISODIC</text>
+          <text class="orbit-label" x="440" y="278" transform="rotate(18 300 300)">DATA</text>
         </g>
 
         <g class="ring r2">
           <ellipse cx="300" cy="300" rx="190" ry="95" fill="none" stroke-width="1.5" transform="rotate(-24 300 300)"/>
           <circle cx="490" cy="300" r="6" transform="rotate(-24 300 300)"/>
-          <text class="orbit-label" x="502" y="305" transform="rotate(-24 300 300)">SEMANTIC</text>
+          <text class="orbit-label" x="502" y="305" transform="rotate(-24 300 300)">LOGIC</text>
         </g>
 
         <g class="ring r3">
           <ellipse cx="300" cy="300" rx="255" ry="128" fill="none" stroke-width="1.5" transform="rotate(8 300 300)"/>
           <circle cx="555" cy="317" r="6" transform="rotate(8 300 300)"/>
-          <text class="orbit-label" x="500" y="345" transform="rotate(8 300 300)">PROCEDURAL</text>
+          <text class="orbit-label" x="500" y="345" transform="rotate(8 300 300)">SYSTEMS</text>
         </g>
       </svg>
     </div>
@@ -100,69 +103,36 @@
   <div class="marquee-wrap">
     <div class="marquee-track">
       <!-- Repeated for infinite scroll -->
-      <span>RESEARCHER <i class="sep"></i> BUILDER <i class="sep"></i> ENGINEER <i class="sep"></i> AI CALIBRATION <i class="sep"></i> MEMORY ARCHITECTURES <i class="sep"></i></span>
-      <span>RESEARCHER <i class="sep"></i> BUILDER <i class="sep"></i> ENGINEER <i class="sep"></i> AI CALIBRATION <i class="sep"></i> MEMORY ARCHITECTURES <i class="sep"></i></span>
-      <span>RESEARCHER <i class="sep"></i> BUILDER <i class="sep"></i> ENGINEER <i class="sep"></i> AI CALIBRATION <i class="sep"></i> MEMORY ARCHITECTURES <i class="sep"></i></span>
+      <span>RESEARCHER <i class="sep"></i> SOFTWARE ENGINEER <i class="sep"></i> DEEP LEARNING <i class="sep"></i> WEB DEVELOPMENT <i class="sep"></i> MACHINE LEARNING <i class="sep"></i></span>
+      <span>RESEARCHER <i class="sep"></i> SOFTWARE ENGINEER <i class="sep"></i> DEEP LEARNING <i class="sep"></i> WEB DEVELOPMENT <i class="sep"></i> MACHINE LEARNING <i class="sep"></i></span>
+      <span>RESEARCHER <i class="sep"></i> SOFTWARE ENGINEER <i class="sep"></i> DEEP LEARNING <i class="sep"></i> WEB DEVELOPMENT <i class="sep"></i> MACHINE LEARNING <i class="sep"></i></span>
     </div>
   </div>
 
-  <section id="research">
+  <section id="about">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2><span class="grad">Research</span> Focus</h2>
-        <div class="note">Three threads that keep showing up in my notebooks, tied together by one question: can a system know how much to trust itself?</div>
+        <h2><span class="grad">About Me</span></h2>
       </div>
       
-      <div class="focus-grid">
-        <div class="focus-card reveal">
-          <span class="bond"></span>
-          <h3>Calibration & uncertainty</h3>
-          <p>Studying why deep networks grow overconfident as they train, and how to correct it — from post-hoc temperature scaling to architectures that separate what a model knows from how sure it is.</p>
-        </div>
-        
-        <div class="focus-card reveal reveal-delay-1">
-          <span class="bond"></span>
-          <h3>Memory architectures</h3>
-          <p>Designing longitudinal memory for AI agents: atoms, bonds, and orbital shells that let a system retrieve the right context without drowning in everything it's ever seen.</p>
-        </div>
-        
-        <div class="focus-card reveal reveal-delay-2">
-          <span class="bond"></span>
-          <h3>Multi-agent systems</h3>
-          <p>Currently defining a new direction on verifier drift — whether a judge model watching a self-improving loop quietly collapses toward rubber-stamping "yes," and how early that's detectable.</p>
+      <div class="focus-grid" style="grid-template-columns: 1fr; max-width: 800px;">
+        <div class="focus-card reveal" style="padding: 40px;">
+          <p style="font-size: 17px; line-height: 1.8; color: var(--text-primary); margin-bottom: 20px;">
+            I am a B.Tech Computer Science student at NIT Andhra Pradesh with a strong foundation in building intelligent systems and scalable web platforms. I enjoy bridging the gap between cutting-edge AI research and practical, user-facing applications.
+          </p>
+          <p style="font-size: 17px; line-height: 1.8; color: var(--text-secondary);">
+            My work spans analyzing deep neural networks to understand their confidence levels (calibration), designing multi-agent memory structures, and crafting modern web experiences using frameworks like Next.js and React. Whether it's training a model on a large dataset or architecting a real-time IoT dashboard, I love diving deep into complex technical challenges.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="bordered" id="work">
+  <section class="bordered" id="research">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2>Selected <span class="grad">Work</span></h2>
-        <div class="note">Research projects and systems, newest first.</div>
-      </div>
-
-      <!-- Molecular Memory Architecture -->
-      <div class="project reveal">
-        <div>
-          <div class="project-head">
-            <h3>Molecular Memory Architecture</h3>
-            <span class="tag research">Memory Systems</span>
-          </div>
-          <p>A hierarchical longitudinal memory system for AI agents — a nucleus plus three orbital layers, with dynamic semantic-graph bonding between memory "atoms."</p>
-          <ul>
-            <li>FAISS HNSW retrieval across episodic, semantic, and procedural memory stores</li>
-            <li>Token-budget aware context injection, so retrieval respects the model's context window rather than overflowing it</li>
-            <li>Forms the memory backbone of an AI tutoring platform currently in development</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://github.com/Amarnath10i/Atom" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
-          </div>
-        </div>
-        <div class="metrics">
-          <div class="metric"><div class="val">3</div><div class="lbl">Memory Layers</div></div>
-          <div class="metric"><div class="val">HNSW</div><div class="lbl">Retrieval Index</div></div>
-        </div>
+        <h2>Selected <span class="grad">Research</span></h2>
+        <div class="note">Academic studies and deep learning explorations.</div>
       </div>
 
       <!-- SPECTRA+ -->
@@ -170,12 +140,12 @@
         <div>
           <div class="project-head">
             <h3>SPECTRA+</h3>
-            <span class="tag research">Calibration</span>
+            <span class="tag research">Deep Learning</span>
           </div>
           <p>Geometric Feature Orthogonal Decomposition for CNN calibration — a training framework that splits feature space into a discriminative subspace and an uncertainty subspace.</p>
           <ul>
-            <li>Gram-Schmidt initialization plus a Frobenius orthogonality penalty to keep the two subspaces genuinely independent</li>
-            <li>Combined with JSR, AHTS, CCKD, and TTSE for calibration and accuracy gains together, not traded off</li>
+            <li>Gram-Schmidt initialization plus a Frobenius orthogonality penalty to keep the two subspaces genuinely independent.</li>
+            <li>Combined with JSR, AHTS, CCKD, and TTSE for calibration and accuracy gains together.</li>
           </ul>
           <div class="project-links">
             <a href="https://github.com/Amarnath10i/spectra-plus-research" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
@@ -192,13 +162,13 @@
         <div>
           <div class="project-head">
             <h3>Layer-wise Calibration in CNNs</h3>
-            <span class="tag research">Deep Learning</span>
+            <span class="tag research">Computer Vision</span>
           </div>
           <p>Linear-probed all 54 residual blocks of a ResNet-110 on CIFAR-100 to trace how miscalibration develops layer by layer, finding a consistent three-phase lifecycle.</p>
           <ul>
-            <li>Early layers: ECE 0.01–0.05 — well calibrated by default</li>
-            <li>Middle layers: ECE peaks near 0.38, MCE near 0.85 — confidence runs far ahead of accuracy</li>
-            <li>Late layers: a "confidence correction phase" pulls ECE back down to ~0.056</li>
+            <li>Early layers: ECE 0.01–0.05 — well calibrated by default.</li>
+            <li>Middle layers: ECE peaks near 0.38 — confidence runs far ahead of accuracy.</li>
+            <li>Late layers: a "confidence correction phase" pulls ECE back down to ~0.056.</li>
           </ul>
           <div class="project-links">
             <a href="https://github.com/Amarnath10i/Calibration-in-CNN" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
@@ -210,6 +180,56 @@
         </div>
       </div>
 
+      <!-- Adverse Weather -->
+      <div class="project reveal">
+        <div>
+          <div class="project-head">
+            <h3>Adverse Weather Self-Adaptive Detection</h3>
+            <span class="tag research">Computer Vision</span>
+          </div>
+          <p>A self-adaptive object detection framework optimized for challenging and adverse weather conditions. Designed to maintain high accuracy when visual data is compromised by rain, fog, or low light.</p>
+          <div class="project-links">
+            <a href="https://github.com/Amarnath10i/adverse-weather-self-adaptive-detection" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="metrics">
+          <div class="metric"><div class="val">CV</div><div class="lbl">Domain</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bordered" id="projects">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Featured <span class="grad">Projects</span></h2>
+        <div class="note">Software engineering, web platforms, and AI tools.</div>
+      </div>
+
+      <!-- Atom -->
+      <div class="project reveal">
+        <div>
+          <div class="project-head">
+            <h3>Atom (LAMA)</h3>
+            <span class="tag">AI Systems</span>
+          </div>
+          <p>Layered Atomic Memory Architecture — an AI tutor with a nucleus/atom memory graph and a forgetting-curve learning OS.</p>
+          <ul>
+            <li>Hierarchical longitudinal memory system with dynamic semantic-graph bonding between memory "atoms."</li>
+            <li>FAISS HNSW retrieval across episodic, semantic, and procedural memory stores.</li>
+            <li>Token-budget aware context injection to respect model windows.</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Amarnath10i/Atom" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="metrics">
+          <div class="metric"><div class="val">LAMA</div><div class="lbl">Architecture</div></div>
+          <div class="metric"><div class="val">TypeScript</div><div class="lbl">Tech Stack</div></div>
+        </div>
+      </div>
+
+      <!-- Repo Runner & Smart Env -->
       <div class="small-grid">
         <!-- Repo Runner -->
         <div class="project small reveal">
@@ -224,6 +244,30 @@
           </div>
         </div>
 
+        <!-- Smart Environment System -->
+        <div class="project small reveal reveal-delay-1">
+          <div class="project-head">
+            <h3>Smart Environment System</h3>
+            <span class="tag">IoT Platform</span>
+          </div>
+          <p>An intelligent IoT-based environmental monitoring and management platform built with Next.js and TypeScript.</p>
+          <div class="project-links">
+            <a href="https://github.com/Amarnath10i/smart_environment_system" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Strada -->
+        <div class="project small reveal">
+          <div class="project-head">
+            <h3>Strada</h3>
+            <span class="tag">Web App</span>
+          </div>
+          <p>A modern web platform built using JavaScript, focusing on seamless user interactions and clean architectural patterns.</p>
+          <div class="project-links">
+            <a href="https://github.com/Amarnath10i/Strada" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
+          </div>
+        </div>
+
         <!-- CinemaTime -->
         <div class="project small reveal reveal-delay-1">
           <div class="project-head">
@@ -235,27 +279,6 @@
             <a href="https://github.com/Amarnath10i/CinemaTime" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
             <a href="https://cinema-time-black.vercel.app" target="_blank" rel="noopener"><i class="ph ph-arrow-up-right"></i> Live Demo</a>
           </div>
-        </div>
-
-        <!-- Smart Environment System -->
-        <div class="project small reveal">
-          <div class="project-head">
-            <h3>Smart Environment System</h3>
-            <span class="tag">IoT Platform</span>
-          </div>
-          <p>An intelligent IoT-based environmental monitoring and management platform built with Next.js and TypeScript.</p>
-          <div class="project-links">
-            <a href="https://github.com/Amarnath10i/smart_environment_system" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
-          </div>
-        </div>
-
-        <!-- FIDES -->
-        <div class="project small reveal reveal-delay-1">
-          <div class="project-head">
-            <h3>FIDES</h3>
-            <span class="tag">Hackathon</span>
-          </div>
-          <p>A trade-compliance and trade-based money laundering (TBML) detection system using LLMs, entity extraction, sanctions screening, and AIS vessel tracking.</p>
         </div>
       </div>
     </div>
@@ -349,7 +372,7 @@
     </div>
   </section>
 
-  <section class="bordered">
+  <section class="bordered" id="achievements">
     <div class="wrap">
       <div class="sec-head reveal">
         <h2><span class="grad">Achievements</span></h2>
@@ -371,12 +394,24 @@
     </div>
   </section>
 
+  <section class="bordered" id="blog" style="padding: 120px 0;">
+    <div class="wrap">
+      <div class="ach reveal" style="text-align: center; max-width: 600px; margin: 0 auto; border-color: var(--apple-blue);">
+        <i class="ph ph-notebook" style="font-size: 48px; color: var(--apple-blue); margin-bottom: 20px;"></i>
+        <h2 style="font-size: 32px; font-weight: 800; margin-bottom: 12px;">Blog <span class="grad">Coming Soon</span></h2>
+        <p style="color: var(--text-secondary); font-size: 16px;">
+          I'm currently writing articles on machine learning, web development, and my experiences building AI projects. Check back soon for deep dives and technical tutorials!
+        </p>
+      </div>
+    </div>
+  </section>
+
   <footer id="contact">
     <div class="wrap">
       <div class="foot-grid reveal">
         <div>
-          <h2>Let's talk <span>memory, calibration,</span> or what you're building.</h2>
-          <p>Open to research collaborations, hackathon teams, and roles in applied ML.</p>
+          <h2>Let's build <span>something amazing</span> together.</h2>
+          <p>Open to software engineering roles, research collaborations, and hackathon teams.</p>
         </div>
         
         <div class="foot-links">
@@ -393,7 +428,7 @@
       </div>
       
       <div class="copyright reveal reveal-delay-1">
-        © 2026 Madaka Amarnath. Built with orbits, in a lab notebook.
+        © 2026 Madaka Amarnath. Crafted with precision and dark mode.
       </div>
     </div>
   </footer>
