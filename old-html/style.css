@@ -129,6 +129,14 @@ nav.wrap {
   display: flex; align-items: center; gap: 12px;
   font-weight: 600; font-size: 15px; letter-spacing: 0.01em;
 }
+.brand-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .brand-dot {
   width: 10px; height: 10px; border-radius: 50%;
   background: var(--grad-primary);
