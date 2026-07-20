@@ -16,7 +16,11 @@ export const Navbar = () => {
   return (
     <header className={`site ${scrolled ? 'scrolled' : ''}`} id="navbar">
       <div className="nav-glass">
-        <nav className="wrap" style={{ justifyContent: 'space-between' }}>
+        <nav className="nav-wrap">
+          <div className="brand">
+            <span className="brand-text">Amarnath</span>
+          </div>
+
           <div className={`navlinks ${menuOpen ? 'active' : ''}`} id="nav-links">
             <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
             <a href="#research" onClick={() => setMenuOpen(false)}>Research</a>
@@ -25,10 +29,6 @@ export const Navbar = () => {
             <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
             <a href="#blog" onClick={() => setMenuOpen(false)}>Blog</a>
             <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-          </div>
-
-          <div className="brand" style={{ marginLeft: 'auto' }}>
-            <span className="brand-text">Amarnath</span>
           </div>
 
           <button 
