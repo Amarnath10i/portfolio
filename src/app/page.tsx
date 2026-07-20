@@ -5,6 +5,7 @@ import { Research } from '@/components/sections/Research';
 import { Projects } from '@/components/sections/Projects';
 import { Experience } from '@/components/sections/Experience';
 import { Skills } from '@/components/sections/Skills';
+import { Contact } from '@/components/sections/Contact';
 import { Footer } from '@/components/layout/Footer';
 
 export default function Home() {
@@ -20,18 +21,8 @@ export default function Home() {
       <Experience />
       <Skills />
       
-      <section className="bordered" id="blog" style={{ padding: '120px 0' }}>
-        <div className="wrap">
-          <div className="ach reveal" style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto', borderColor: 'var(--apple-blue)' }}>
-            <i className="ph ph-notebook" style={{ fontSize: '48px', color: 'var(--apple-blue)', marginBottom: '20px' }}></i>
-            <h2 style={{ fontSize: '32px', fontWeight: '800', marginBottom: '12px' }}>Blog <span className="grad">Coming Soon</span></h2>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '16px' }}>
-              I'm currently writing articles on machine learning, web development, and my experiences building AI projects. Check back soon for deep dives and technical tutorials!
-            </p>
-          </div>
-        </div>
-      </section>
 
+      <Contact />
       <Footer />
     </main>
   );

@@ -13,6 +13,13 @@ export const projects = [
     github: "https://github.com/Amarnath10i/Atom",
     demo: null,
     image: "/projects/atom.png",
+    screenshots: [
+      "/projects/screenshots/atom/Screenshot 2026-07-20 221236.png",
+      "/projects/screenshots/atom/Screenshot 2026-07-20 221311.png",
+      "/projects/screenshots/atom/Screenshot 2026-07-20 221346.png",
+      "/projects/screenshots/atom/Screenshot 2026-07-20 221414.png",
+      "/projects/screenshots/atom/Screenshot 2026-07-20 221454.png"
+    ],
     featured: true
   },
   {
@@ -29,6 +36,9 @@ export const projects = [
     github: "https://github.com/Amarnath10i/repo-runner",
     demo: "https://github-runner-kappa.vercel.app",
     image: "/projects/repo.png",
+    screenshots: [
+      "/projects/screenshots/repo runner/Screenshot 2026-07-20 222346.png"
+    ],
     featured: false
   },
   {
@@ -45,6 +55,11 @@ export const projects = [
     github: "https://github.com/Amarnath10i/smart_environment_system",
     demo: null,
     image: "/projects/iot.png",
+    screenshots: [
+      "/projects/screenshots/smart environment system/Screenshot 2026-07-20 223207.png",
+      "/projects/screenshots/smart environment system/Screenshot 2026-07-20 223238.png",
+      "/projects/screenshots/smart environment system/Screenshot 2026-07-20 223256.png"
+    ],
     featured: false
   },
   {
@@ -61,6 +76,7 @@ export const projects = [
     github: "https://github.com/Amarnath10i/Strada",
     demo: null,
     image: "/projects/strada.png",
+    screenshots: [],
     featured: false
   },
   {
@@ -77,6 +93,11 @@ export const projects = [
     github: "https://github.com/Amarnath10i/CinemaTime",
     demo: "https://cinema-time-black.vercel.app",
     image: "/projects/cinema.png",
+    screenshots: [
+      "/projects/screenshots/cinema time/Screenshot 2026-07-20 222646.png",
+      "/projects/screenshots/cinema time/Screenshot 2026-07-20 222853.png",
+      "/projects/screenshots/cinema time/Screenshot 2026-07-20 223033.png"
+    ],
     featured: false
   }
 ];

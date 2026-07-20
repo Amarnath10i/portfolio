@@ -12,6 +12,7 @@ type Project = {
   github: string;
   demo?: string | null;
   image: string;
+  screenshots?: string[];
 };
 
 interface ProjectModalProps {
@@ -106,29 +107,42 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
               </div>
             </div>
 
-            {project.image && (
-              <div className="previews-section">
-                <h3 className="previews-title">Previews</h3>
-                <div className="previews-grid">
-                  {[1, 2, 3, 4, 5].map((num) => {
-                    const baseImageName = project.image.replace('/projects/', '').replace('.png', '');
-                    return (
+            {/* Added Screenshots Section Below modal-body */}
+            {project.screenshots && project.screenshots.length > 0 && (
+              <div style={{ padding: '0 32px 32px 32px' }}>
+                <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '40px' }}>
+                  <h3 style={{ 
+                    textAlign: 'center', 
+                    color: 'var(--apple-green)', 
+                    fontSize: 'clamp(32px, 5vw, 48px)', 
+                    fontWeight: 900, 
+                    textTransform: 'uppercase', 
+                    letterSpacing: '8px',
+                    marginBottom: '40px',
+                    textShadow: '0 0 20px rgba(48, 209, 88, 0.4)'
+                  }}>
+                    Previews
+                  </h3>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                    {project.screenshots.map((img, idx) => (
                       <img 
-                        key={num}
-                        src={`/projects/${baseImageName}-preview-${num}.png`} 
-                        alt={`${project.title} Preview ${num}`} 
-                        className="preview-thumb"
-                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                        key={idx} 
+                        src={img} 
+                        alt={`${project.title} screenshot ${idx + 1}`} 
+                        style={{ 
+                          width: '100%', 
+                          borderRadius: '12px', 
+                          border: '1px solid rgba(255,255,255,0.1)',
+                          boxShadow: '0 20px 40px rgba(0,0,0,0.5)',
+                          backgroundColor: '#000'
+                        }} 
                       />
-                    );
-                  })}
+                    ))}
+                  </div>
                 </div>
               </div>
             )}
 
-            <div className="scroll-indicator">
-              <i className="ph ph-arrow-down"></i>
-            </div>
           </motion.div>
         </div>
       )}
