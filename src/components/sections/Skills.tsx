@@ -32,7 +32,20 @@ const getSkillStyling = (skillName: string) => {
     'SQLite': { icon: 'ph-fill ph-database', color: '#003B57' },
     'ChromaDB': { icon: 'ph-fill ph-database', color: '#EC4899' },
     'Firebase': { icon: 'ph-fill ph-flame', color: '#FFCA28' },
-    'LLM APIs (Gemini)': { icon: 'ph-fill ph-sparkle', color: '#1A73E8' },
+    'LLM APIs': { icon: 'ph-fill ph-sparkle', color: '#1A73E8' },
+    'SciPy': { icon: 'ph-fill ph-function', color: '#8CAAE6' },
+    'FastAPI': { icon: 'ph-fill ph-lightning', color: '#05998B' },
+    'Node.js': { icon: 'ph-fill ph-hexagon', color: '#83CD29' },
+    'Kaggle': { icon: 'ph-fill ph-cpu', color: '#20BEFF' },
+    'Weights & Biases': { icon: 'ph-fill ph-chart-bar', color: '#FFBE00' },
+
+    'Scientific ML': { icon: 'ph-fill ph-atom', color: '#30D158' },
+    'Neural Operators': { icon: 'ph-fill ph-wave-sine', color: '#0A84FF' },
+    'Uncertainty Quantification': { icon: 'ph-fill ph-chart-line', color: '#BF5AF2' },
+    'Hyperspectral Imaging': { icon: 'ph-fill ph-globe-hemisphere-west', color: '#64D2FF' },
+    'Medical Image Segmentation': { icon: 'ph-fill ph-first-aid', color: '#FF453A' },
+    'Model Calibration': { icon: 'ph-fill ph-gauge', color: '#FF9F0A' },
+    'Embodied AI': { icon: 'ph-fill ph-robot', color: '#FFD60A' },
     'Hugging Face': { icon: 'ph-fill ph-smiley-wink', color: '#FFD21E' },
   };
   return map[skillName] || { icon: 'ph-fill ph-code', color: '#4ADE80' };
@@ -65,7 +78,7 @@ export const Skills = () => {
         
         <div style={{ 
           display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', 
           gap: '32px' 
         }}>
           {skills.map((group, idx) => (

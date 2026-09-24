@@ -1,9 +1,26 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
+const description = 'Madaka Amarnath — AI researcher and software engineer working on scientific machine learning, hyperspectral imaging, medical image segmentation, embodied AI and model calibration.';
+
 export const metadata: Metadata = {
-  title: 'Madaka Amarnath — Researcher & Software Engineer',
-  description: 'Portfolio of Madaka Amarnath, Researcher and Software Engineer.',
+  metadataBase: new URL('https://amarnath10i-portfolio.vercel.app'),
+  title: 'Madaka Amarnath — AI Researcher & Software Engineer',
+  description,
+  keywords: ['Madaka Amarnath', 'AI research', 'scientific machine learning', 'neural operators', 'hyperspectral image fusion', 'polyp segmentation', 'embodied AI', 'model calibration', 'NIT Andhra Pradesh'],
+  authors: [{ name: 'Madaka Amarnath', url: 'https://github.com/Amarnath10i' }],
+  openGraph: {
+    title: 'Madaka Amarnath — AI Researcher & Software Engineer',
+    description,
+    url: '/',
+    siteName: 'Madaka Amarnath',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Madaka Amarnath — AI Researcher & Software Engineer',
+    description,
+  },
 };
 
 export default function RootLayout({

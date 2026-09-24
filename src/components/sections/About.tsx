@@ -35,17 +35,16 @@ export const About = () => {
   });
 
   const textArray = [
-    "An", "AI", "researcher", <TechPill key="ai" icon="ph ph-brain" text="AI" />, 
-    "and", "software", "engineer", <TechPill key="se" icon="ph ph-code" text="Dev" />, 
-    "who", "builds", "intelligent", "systems", "and", "scalable", "platforms.", 
-    "I", "bridge", "the", "gap", "between", "AI", "research", 
-    "and", "real-world", "applications.", "I", "create", "modern", "web", "experiences", 
-    "with", "Next.js", <TechPill key="next" icon="ph ph-triangle" text="Next.js" />, 
-    "and", "React", <TechPill key="react" icon="ph ph-atom" text="React" />, 
-    "and", "architect", "complex", "backend", "systems", "using", "Python", 
-    <TechPill key="py" icon="ph ph-file-py" text="Python" />, "and", "Node.js", 
-    <TechPill key="node" icon="ph ph-hexagon" text="Node.js" />, ".", 
-    "I'm", "always", "solving", "complex", "technical", "challenges."
+    "An", "AI", "researcher", <TechPill key="ai" icon="ph ph-brain" text="AI" />,
+    "and", "software", "engineer", <TechPill key="se" icon="ph ph-code" text="Dev" />,
+    "studying", "what", "learned", "models", "can", "actually", "know", "—",
+    "from", "neural", "operators", <TechPill key="sciml" icon="ph ph-wave-sine" text="SciML" />,
+    "and", "hyperspectral", "fusion", "to", "medical", "imaging", "and", "embodied", "agents.",
+    "I", "turn", "that", "research", "into", "working", "software", "with", "PyTorch",
+    <TechPill key="torch" icon="ph ph-fire" text="PyTorch" />, "Python",
+    <TechPill key="py" icon="ph ph-file-py" text="Python" />, "and", "Next.js",
+    <TechPill key="next" icon="ph ph-triangle" text="Next.js" />, "—",
+    "rigorous", "where", "it", "matters,", "and", "built", "to", "be", "used."
   ];
 
   return (

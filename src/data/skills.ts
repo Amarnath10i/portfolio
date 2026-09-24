@@ -1,18 +1,22 @@
 export const skills = [
   {
+    category: "Research Areas",
+    items: ["Scientific ML", "Neural Operators", "Uncertainty Quantification", "Hyperspectral Imaging", "Medical Image Segmentation", "Model Calibration", "Embodied AI"]
+  },
+  {
     category: "Languages",
     items: ["Python", "TypeScript", "JavaScript", "C++", "C", "Java"]
   },
   {
-    category: "Frameworks & Tools",
-    items: ["PyTorch", "TensorFlow", "Next.js", "React", "Flutter", "Flask", "Streamlit", "Docker", "Git"]
+    category: "ML & Scientific Computing",
+    items: ["PyTorch", "TensorFlow", "NumPy", "SciPy", "Pandas", "Scikit-learn", "OpenCV", "Sentence-Transformers", "FAISS"]
   },
   {
-    category: "Libraries",
-    items: ["NumPy", "Pandas", "Scikit-learn", "Sentence-Transformers", "FAISS", "OpenCV"]
+    category: "Web & Backend",
+    items: ["Next.js", "React", "FastAPI", "Flask", "Streamlit", "Flutter", "Node.js"]
   },
   {
-    category: "Databases & Services",
-    items: ["PostgreSQL", "SQLite", "ChromaDB", "Firebase", "LLM APIs (Gemini)", "Hugging Face"]
+    category: "Data, Infra & Services",
+    items: ["PostgreSQL", "SQLite", "ChromaDB", "Firebase", "Docker", "Git", "Kaggle", "Weights & Biases", "Hugging Face", "LLM APIs"]
   }
 ];

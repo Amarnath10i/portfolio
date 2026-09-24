@@ -5,11 +5,11 @@ export const projects = [
     category: "AI Systems",
     description: "Layered Atomic Memory Architecture — an AI tutor with a nucleus/atom memory graph and a forgetting-curve learning OS.",
     details: [
-      "Hierarchical longitudinal memory system with dynamic semantic-graph bonding between memory 'atoms.'",
+      "Hierarchical long-term memory with dynamic semantic-graph bonding between memory 'atoms'.",
       "FAISS HNSW retrieval across episodic, semantic, and procedural memory stores.",
-      "Token-budget aware context injection to respect model windows."
+      "Token-budget-aware context injection, agentic tools and a forgetting-curve (spaced-repetition) learning OS."
     ],
-    tech: ["LAMA", "TypeScript", "FAISS"],
+    tech: ["TypeScript", "FAISS", "LLM Agents"],
     github: "https://github.com/Amarnath10i/Atom",
     demo: null,
     image: "/projects/atom.png",
@@ -52,7 +52,7 @@ export const projects = [
       "Secure user authentication and device management."
     ],
     tech: ["Next.js", "TypeScript", "IoT"],
-    github: "https://github.com/Amarnath10i/smart_environment_system",
+    github: "https://github.com/Amarnath10i/smart-environment-system",
     demo: null,
     image: "/projects/iot.png",
     screenshots: [
@@ -63,10 +63,44 @@ export const projects = [
     featured: false
   },
   {
+    id: "fides",
+    title: "FIDES",
+    category: "AI Compliance",
+    description: "Federated Intelligence for Document & Entity Screening — upload trade documents and get a plain-language fraud-risk brief in about a minute, built to help small customs brokers screen shipments before filing.",
+    details: [
+      "OCR ingestion of PDFs and images, with LLM-based extraction of shippers, consignees, vessels, ports and invoice amounts.",
+      "Five enrichment checks: sanctions screening, AIS vessel tracking, price benchmarking, address validation and corporate-identity verification.",
+      "Federated risk fingerprinting across brokers, tamper detection, a 0–100 risk score and an explainable report with a Q&A assistant."
+    ],
+    tech: ["FastAPI", "Gemini", "EasyOCR"],
+    github: "https://github.com/Amarnath10i/FIDES",
+    demo: null,
+    image: "",
+    screenshots: [],
+    featured: false
+  },
+  {
+    id: "car-manual",
+    title: "Car Manual Assistant",
+    category: "Multilingual RAG",
+    description: "A retrieval-augmented QA chatbot over the Maruti Suzuki Dzire owner's manual that answers questions in English, Hindi and Telugu.",
+    details: [
+      "PDF parsing and chunking of the owner's manual with PyMuPDF.",
+      "TF-IDF retrieval with cosine similarity to surface the most relevant manual passages.",
+      "Query and answer translation (Google Translate) for Hindi and Telugu speakers."
+    ],
+    tech: ["Python", "Streamlit", "RAG"],
+    github: "https://github.com/Amarnath10i/car_manual_assistant",
+    demo: null,
+    image: "",
+    screenshots: [],
+    featured: false
+  },
+  {
     id: "strada",
     title: "Strada",
     category: "Web App",
-    description: "A modern web platform built using JavaScript, focusing on seamless user interactions and clean architectural patterns.",
+    description: "A modern JavaScript web platform focused on smooth user interactions and a clean, component-driven architecture.",
     details: [
       "Component-driven architecture for scalable UI development.",
       "Optimized for performance and accessibility.",

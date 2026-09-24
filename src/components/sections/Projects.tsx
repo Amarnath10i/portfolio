@@ -44,7 +44,7 @@ export const Projects = () => {
               transition={{ delay: 0.2 }}
               style={{ color: 'var(--text-secondary)', fontSize: '18px', maxWidth: '600px', margin: '0 auto' }}
             >
-              Building robust platforms and intelligent web applications.
+              AI-powered products, developer tools and full-stack platforms.
             </motion.p>
           </div>
         </div>

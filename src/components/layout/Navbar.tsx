@@ -103,7 +103,7 @@ export const Navbar = () => {
           { id: 'projects', label: 'Projects' },
           { id: 'about', label: 'About' },
           { id: 'experience', label: 'Education' },
-          { id: 'skills', label: 'Skill' },
+          { id: 'skills', label: 'Skills' },
           { id: 'contact', label: 'Contact' }
         ].map(item => {
           const isActive = activeSection === item.id;

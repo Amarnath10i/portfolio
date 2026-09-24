@@ -1,10 +1,9 @@
 export const profile = {
   name: "Madaka Amarnath",
-  role: "Researcher & Software Engineer",
-  tagline: "AI-Curated Luxe Fashion", 
+  role: "AI Researcher & Software Engineer",
   greeting: "Hi, I'm",
-  bio: "I'm a researcher and software engineer passionate about machine learning, deep learning, and building robust applications. I explore problems across AI calibration, memory architectures, and scalable full-stack development.",
-  longBio: "I am a B.Tech Computer Science student at NIT Andhra Pradesh with a strong foundation in building intelligent systems and scalable web platforms. I enjoy bridging the gap between cutting-edge AI research and practical, user-facing applications.\\n\\nMy work spans analyzing deep neural networks to understand their confidence levels (calibration), designing multi-agent memory structures, and crafting modern web experiences using frameworks like Next.js and React. Whether it's training a model on a large dataset or architecting a real-time IoT dashboard, I love diving deep into complex technical challenges.",
+  bio: "I'm an AI researcher and software engineer working on scientific machine learning, remote sensing, medical imaging and trustworthy deep learning — and on turning that research into robust, usable software.",
+  longBio: "I am a B.Tech Computer Science student at NIT Andhra Pradesh. My research asks what learned models can actually know: when hyperspectral fusion is identifiable, how calibrated a network's confidence is, and how much a prediction can be trusted over long horizons. Current work spans neural operators for flood forecasting and nuclear-waste corrosion, identifiable hyperspectral image fusion, polyp segmentation with state-space models, and embodied agents that learn affordances by verifying their own hypotheses. Alongside research, I build full-stack products with Next.js, FastAPI and LLM tooling.",
   socials: {
     github: "https://github.com/Amarnath10i",
     kaggle: "https://kaggle.com/amarnath10",

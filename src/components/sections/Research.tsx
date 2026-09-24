@@ -14,7 +14,7 @@ export const Research = () => {
             viewport={{ once: true }}
             style={{ fontSize: '14px', letterSpacing: '4px', textTransform: 'uppercase', color: 'var(--apple-green)', marginBottom: '16px', fontWeight: '600' }}
           >
-            Academic Studies
+            Research
           </motion.p>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export const Research = () => {
             transition={{ delay: 0.2 }}
             style={{ color: 'var(--text-secondary)', fontSize: '18px', maxWidth: '600px', margin: '0 auto' }}
           >
-            Deep learning explorations and novel architectures.
+            Scientific machine learning, remote sensing, medical imaging, embodied AI and model calibration.
           </motion.p>
         </div>
 
@@ -87,6 +87,22 @@ export const Research = () => {
                   }}>
                     {item.category}
                   </span>
+                  <span style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    padding: '6px 12px',
+                    border: '1px solid rgba(255, 255, 255, 0.15)',
+                    color: 'rgba(255, 255, 255, 0.7)',
+                    borderRadius: '100px',
+                    fontSize: '11px',
+                    fontWeight: '600',
+                    textTransform: 'uppercase',
+                    letterSpacing: '1px'
+                  }}>
+                    <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: item.status === 'Ongoing' ? 'var(--apple-orange)' : 'var(--apple-green)' }}></span>
+                    {item.status}
+                  </span>
                 </div>
                 
                 <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.85)', lineHeight: '1.6', marginBottom: '32px' }}>
@@ -105,6 +121,7 @@ export const Research = () => {
                 )}
                 
                 <div style={{ display: 'flex', gap: '16px' }}>
+                  {item.github ? (
                   <a href={item.github} target="_blank" rel="noopener noreferrer" style={{
                     display: 'inline-flex', alignItems: 'center', gap: '10px',
                     padding: '14px 28px',
@@ -123,6 +140,19 @@ export const Research = () => {
                   >
                     <i className="ph-fill ph-github-logo" style={{ fontSize: '22px' }}></i> Source Code
                   </a>
+                  ) : (
+                  <span style={{
+                    display: 'inline-flex', alignItems: 'center', gap: '10px',
+                    padding: '14px 28px',
+                    border: '1px solid rgba(255, 255, 255, 0.15)',
+                    borderRadius: '100px',
+                    color: 'rgba(255, 255, 255, 0.7)',
+                    fontSize: '15px',
+                    fontWeight: '600'
+                  }}>
+                    <i className="ph ph-lock-simple" style={{ fontSize: '20px' }}></i> Code released on publication
+                  </span>
+                  )}
                 </div>
               </div>
 

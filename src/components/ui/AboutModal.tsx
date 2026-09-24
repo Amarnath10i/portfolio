@@ -23,7 +23,7 @@ export const AboutModal = ({ isOpen, onClose }: AboutModalProps) => {
 
   if (!isOpen) return null;
 
-  const text = `${profile.bio} I'm passionate about building scalable AI architectures and seamless web platforms. I love bridging the gap between highly technical backend logic and beautiful frontend interfaces. Whether it's training a model on a large dataset or architecting a real-time IoT dashboard, I love diving deep into complex technical challenges.`;
+  const text = profile.longBio;
   const words = text.split(" ");
 
   return (
