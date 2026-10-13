@@ -4,7 +4,7 @@ export const experience = [
     period: "2023 – 2027",
     title: "B.Tech, Computer Science & Engineering",
     organization: "National Institute of Technology Andhra Pradesh",
-    description: "CGPA 7.08/10. Coursework: Data Structures & Algorithms, Operating Systems, DBMS, OOP, Machine Learning, Deep Learning."
+    description: "CGPA 6.7/10. Coursework: Data Structures & Algorithms, Operating Systems, DBMS, OOP, Machine Learning, Deep Learning."
   },
   {
     id: "intermediate",
