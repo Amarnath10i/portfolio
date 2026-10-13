@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-const description = 'Madaka Amarnath — AI researcher and software engineer working on scientific machine learning, hyperspectral imaging, medical image segmentation, embodied AI and model calibration.';
+const description = 'Madaka Amarnath — machine learning engineer building and evaluating fraud detection, recommender systems, knowledge tracing, multilingual retrieval and flood forecasting, with research in hyperspectral imaging and medical image segmentation.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://amarnath10i-portfolio.vercel.app'),
-  title: 'Madaka Amarnath — AI Researcher & Software Engineer',
+  title: 'Madaka Amarnath — Machine Learning Engineer & Researcher',
   description,
   keywords: ['Madaka Amarnath', 'AI research', 'scientific machine learning', 'neural operators', 'hyperspectral image fusion', 'polyp segmentation', 'embodied AI', 'model calibration', 'NIT Andhra Pradesh'],
   authors: [{ name: 'Madaka Amarnath', url: 'https://github.com/Amarnath10i' }],
   openGraph: {
-    title: 'Madaka Amarnath — AI Researcher & Software Engineer',
+    title: 'Madaka Amarnath — Machine Learning Engineer & Researcher',
     description,
     url: '/',
     siteName: 'Madaka Amarnath',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Madaka Amarnath — AI Researcher & Software Engineer',
+    title: 'Madaka Amarnath — Machine Learning Engineer & Researcher',
     description,
   },
 };

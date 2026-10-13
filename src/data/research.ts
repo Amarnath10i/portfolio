@@ -48,18 +48,18 @@ export const research: ResearchItem[] = [
   {
     id: "varuna",
     title: "VARUNA",
-    category: "Scientific ML",
+    category: "Scientific ML · Hydrology",
     status: "Ongoing",
-    description: "An uncertainty-aware neural-operator flood early-warning system that turns public satellite and reanalysis data into calibrated, auditable flood alerts and parametric-insurance triggers for monsoon-prone South Asia.",
+    description: "Flood early warning and parametric flood triggers for Indian rivers, benchmarked on 239 real catchments (CAMELS-IND, 1980–2020) with every number on 2016–2020, which no model was tuned on.",
     details: [
-      "RainCast: a Fourier Neural Operator with a per-wavenumber log-variance branch, trained on closed-form CRPS and spectral Gaussian NLL.",
-      "HydroNet: a graph neural ODE that routes rainfall through the river network, wrapped in split-conformal prediction intervals at every lead time.",
-      "FloodMap: a cross-modal SAR↔optical masked autoencoder that learns flood maps from fewer than 50 labelled masks.",
-      "Live data clients for NOAA GFS, IMD, GloFAS, Sentinel-1/2 and ERA5 feeding an end-to-end forecast pipeline."
+      "A regional LSTM ensemble reaches median NSE 0.44, beating GR4J calibrated per catchment (+0.040) and the best of 47 conceptual models (+0.042); it ties LightGBM and the dataset's published LSTM.",
+      "With whole river basins held out, the ungauged LSTM matches GR4J calibrated on the river's own 25 years of flow.",
+      "The original single-width conformal intervals covered 6.5% of flood days; per-catchment, log-scale adaptive intervals cover 61.7% (87% overall).",
+      "Replays the August 2018 Kerala floods through the full decision chain; the live pipeline now records why it cannot decide instead of firing on untrained inputs."
     ],
     metrics: [
-      { label: "Conformal Coverage", value: "90%" },
-      { label: "Live Data Feeds", value: "5" }
+      { label: "Catchments", value: "239" },
+      { label: "Median NSE (2016–20)", value: "0.44" }
     ],
     github: "https://github.com/Amarnath10i/VARUNA"
   },
@@ -85,32 +85,33 @@ export const research: ResearchItem[] = [
     title: "Nuclear Waste Glass Corrosion",
     category: "Scientific ML",
     status: "Ongoing",
-    description: "Physics-informed, multi-scale machine-learning surrogates that predict the long-term corrosion of vitrified nuclear waste glass over a 100,000-year repository horizon.",
+    description: "Building blocks for predicting nuclear waste glass corrosion over geological time: dissolution physics, a staged alteration model and conformal prediction, with the neural surrogates still to be trained on laboratory data.",
     details: [
-      "Physics-informed neural operators (PINO) and DeepONets penalised by transition-state-theory rate laws and reactive-transport PDE residuals.",
-      "Bridges atomistic (ReaxFF), gel-layer mesoscale and continuum reactive-transport scales.",
-      "Bayesian neural networks and split conformal prediction to separate epistemic and aleatoric uncertainty for regulatory safety cases."
+      "Transition-state-theory rate law (temperature, pH, silica saturation) and a closed-form three-stage alteration model, tested against their governing equations.",
+      "Split and quantile conformal prediction, with coverage checked over repeated splits.",
+      "PINO, DeepONet and Bayesian-NN implementations; no laboratory data is in the repository yet, so no accuracy is claimed."
     ],
     metrics: [
-      { label: "Prediction Horizon", value: "100k yr" },
-      { label: "Physical Scales", value: "3" }
+      { label: "Time span explored", value: "100k yr" },
+      { label: "Status", value: "Early stage" }
     ],
     github: "https://github.com/Amarnath10i/nuclear-glass-corrosion"
   },
   {
     id: "neural-operators",
-    title: "Neural Operators for PDEs",
+    title: "Neural Operators: What They Learn",
     category: "Scientific ML",
-    status: "Ongoing",
-    description: "A research framework for operator learning on parametric PDEs — Fourier, DeepONet and graph neural operators with spectral solvers, zero-shot super-resolution evaluation and generalisation theory.",
+    status: "Completed",
+    description: "A controlled benchmark of Fourier Neural Operators against DeepONet, CNN/U-Net and linear baselines on Burgers and Darcy flow, testing the usual claims: zero-shot super-resolution, data efficiency and speed against a solver.",
     details: [
-      "FNO 1D/2D/3D, factorised FNO, wavelet and hybrid variants; DeepONet, stacked and POD-DeepONet; graph, multipole and low-rank neural operators.",
-      "Spectral solvers for Burgers, Darcy flow and 2D/3D Navier–Stokes benchmarks.",
-      "Mixed-precision, distributed training with spectral losses and physics-aware metrics (energy, enstrophy, zero-shot resolution transfer)."
+      "Numerical solvers tested against exact solutions (heat-equation limit, second-order manufactured-solution convergence).",
+      "Burgers: FNO 0.39% and DeepONet 0.32% relative error; running the FNO on a 4× finer grid is exactly as good as interpolating its coarse prediction.",
+      "A CNN run on a finer grid degrades from 17% to 72% error, which is what discretisation invariance actually protects against.",
+      "Trained FNOs exported to NumPy (matching PyTorch to 1e-8) power an in-browser demo next to the live solvers."
     ],
     metrics: [
-      { label: "Operator Families", value: "3" },
-      { label: "PDE Benchmarks", value: "3" }
+      { label: "Burgers rel. L2 (FNO)", value: "0.39%" },
+      { label: "Models compared", value: "5" }
     ],
     github: "https://github.com/Amarnath10i/neural-operators"
   },
@@ -151,14 +152,15 @@ export const research: ResearchItem[] = [
     id: "weather",
     title: "Adverse Weather Self-Adaptive Detection",
     category: "Computer Vision",
-    status: "Completed",
-    description: "A self-adaptive object-detection framework that maintains accuracy when visual input is degraded by rain, fog or low light.",
+    status: "Ongoing",
+    description: "Object detection that adapts to adverse weather: depth-aware synthetic fog, rain, snow, dust, sandstorm, haze, night and glare, failure maps over weather × severity, and targeted retraining.",
     details: [
-      "Dynamic adaptation to varying illumination and weather conditions.",
-      "Robust feature extraction for degraded visual inputs."
+      "Physically motivated generators for 9 conditions plus 10 time-of-day mixes; bounding-box labels survive every effect.",
+      "Self-adaptation loop that oversamples weak weather cells and grows YOLOv8n to YOLOv8s on plateau, plus channel pruning.",
+      "Runs end to end in a smoke-test configuration; the full BDD100K run is next."
     ],
     metrics: [
-      { label: "Weather Conditions (Rain, Fog, Night)", value: "3" }
+      { label: "Weather conditions", value: "9 + 10 mixed" }
     ],
     github: "https://github.com/Amarnath10i/adverse-weather-self-adaptive-detection"
   }
